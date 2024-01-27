@@ -1,16 +1,41 @@
 @import './base.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-}
-
-a,
+a.router-link-exact-active,
 .green {
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
-  padding: 3px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  padding: 0 8px;
+  color: #333;
+}
+a:hover {
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  
+}
+
+header {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+}
+
+.router-content {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 16px;
 }
