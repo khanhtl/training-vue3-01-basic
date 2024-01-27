@@ -1,4 +1,3 @@
-import SetupView from '@/views/SetupView.vue';
 import { lessons } from './../shared';
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 
