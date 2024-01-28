@@ -54,4 +54,9 @@ export const lessons=[
         text: 'Slot',
         view: 'Slot',
     },
+    {
+        path: '/jsx',
+        text: 'Jsx',
+        view: 'Jsx',
+    },
 ];
