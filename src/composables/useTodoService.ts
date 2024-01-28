@@ -29,10 +29,14 @@ function getTodos() {
 }
 
 export default function useTodoService() {
-  async function fetchTodos(): Promise<any> {
+  async function fetchTodos(searchTerm: string | null = null): Promise<any> {
     try {
       isLoading.value=true;
-      return await getTodos();
+      let data: Todo[]=await getTodos() as any;
+      if (searchTerm) {
+        data = data.filter(t => t.text.toLowerCase().includes(searchTerm.toLowerCase()))
+      }
+      return data;
     } catch (error) {
       throw new Error("Network error");
     } finally {
