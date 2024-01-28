@@ -49,4 +49,9 @@ export const lessons=[
         text: 'Teleport',
         view: 'Teleport',
     },
+    {
+        path: '/slot',
+        text: 'Slot',
+        view: 'Slot',
+    },
 ];
