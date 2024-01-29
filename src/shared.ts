@@ -59,4 +59,9 @@ export const lessons=[
         text: 'Jsx',
         view: 'Jsx',
     },
+    {
+        path: '/new-feature',
+        text: 'New Feature',
+        view: 'NewFeature',
+    },
 ];
